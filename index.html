@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WHERE DOES MY MONEY GO? 〜税金はどこへ行った？〜</title>
+
+  <meta name="description" content="あなたの税金がどこで使われているかをお示しします">
+  <meta name="viewport" content="width=device-width">
+
+    <meta name="author" content="Open Knowledge Founadtion Japan">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 520px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+
+
+      margin-top: 40px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 30px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 10px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 35px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        height: 500px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 25px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 10px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/wdmmg05.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <div align="center">
+              <h1>WHERE DOES MY MONEY GO?</h1>
+              <p class="lead">〜税金はどこへ行った？〜</p>
+                          <br>
+                          <object id="vp1FQMdR" width="540" height="303" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"><param name="movie" value="http://static.animoto.com/swf/w.swf?w=swf/vp1&e=1365397299&f=FQMdRJcmwkYsbM5FNk9DYQ&d=0&m=a&r=360p&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options="></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed id="vp1FQMdR" src="http://static.animoto.com/swf/w.swf?w=swf/vp1&e=1365397299&f=FQMdRJcmwkYsbM5FNk9DYQ&d=0&m=a&r=360p&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="540" height="303"></embed></object>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <h2>Where Does My Money Go?とは？</h2>
+          <p>あなたの年収のうちいくらが市税や町税で、それらが何の目的に使われているのか、1日当たりの金額で可視化するWEBサービスです。</p>
+          <p><a class="btn" href="#about">詳細 &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        
+        <div class="span4">
+          <h2>各地への広がり</h2>
+          <p>日本では2012年に横浜から始まり、現在では千葉、仙台、福岡、北名古屋の5都市に広がっています。</p>
+          <p><a class="btn" href="#clones">詳細 &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        
+        <div class="span4">
+          <h2>開発主体&サポート</h2>
+          <p>このプロジェクトは市民の手で運営されているのが最大の特徴です。是非あなたが住んでいる街のWhere Does My Money Go? を立ち上げてみましょう！</p>
+          <p><a class="btn" href="#dev">詳細 &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <a name="about"></a><h2 class="featurette-heading">Where Does My Money Go?<span class="muted">とは？</span></h2>
+        <p class="lead">あなたの年収のうちいくらが市税や町税で、それらが何の目的に使われているのか、1日当たりの金額で可視化するWEBサービスです。<br>
+          このサービスを立ち上げた目的は、納税者である国民一人ひとりが、支払っている税金の使われ方を具体的に理解し、税金の使われ方を決める当事者として責任ある意見を述べることを手助けすることです。私達は、国民一人ひとりが、公共サービスにおける受益と負担の関係を数字で理解したうえで、私ならこう税金を使って欲しいという具体的で責任のある意見を述べることができるようなることが、日本の財政を健全化させ、日本を新たな成長へと導く近道に違いないと考えています。
+現在のヴァージョンでは、県市町村といった、いわゆる地方自治体の財政データを扱えるようになっています。<br>
+<div align="center">
+      <img src="img/screenshot.png" alt="" width="750px">
+</div>
+
+</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <a name="clones"></a><h2 class="featurette-heading">各地への広がり<span class="muted"></span></h2>
+        <p class="lead">
+<ul>
+<li>横浜市版　<a href="http://spending.jp/" target="_blank">http://spending.jp/</a></li>
+<li>千葉市版　<a href="http://chiba.spending.jp/" target="_blank">http://chiba.spending.jp/</a></li>
+<li>仙台市版　<a href="http://sendai.spending.jp/" target="_blank">http://sendai.spending.jp/</a></li>
+<li>福岡市版　<a href="http://fukuoka.spending.jp/" target="_blank">http://fukuoka.spending.jp/</a></li>
+<li>北名古屋市版　<a href="http://kitanagoya.spending.jp/" target="_blank">http://kitanagoya.spending.jp/</a></li>
+</ul>
+</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <a name="dev"></a><h2 class="featurette-heading">開発主体は誰？<span class="muted"></span></h2>
+        <p class="lead">このプロジェクトは市民の手で運営されているのが最大の特徴であり、今後、更になるデータの収集、分析を実施したいと考えています。<br>
+もし、WEBサービスの開発経験がある方なら、是非あなたが住んでいる街のWhere Does My Money Go? を立ち上げてみましょう！こちらのページに、基本的な立ち上げ手法が載っていますから、参考にしてください。<br>
+<a href="http://qiita.com/items/38c186efbd272ef59121" target="_blank"><button class="btn" type="button">クローンサイトの立ち上げ手順</button></a>
+</p>
+      </div>
+<br>
+     <div class="featurette">
+        <h2 class="featurette-heading">サポート体制は？<span class="muted"></span></h2>
+        <p class="lead">開発者コミュニティのMLがあります。<br>
+         <a href="https://groups.google.com/forum/?fromgroups#!forum/spendingjp-dev" target="_blank"><button class="btn" type="button">Spending.jp サポートフォーラム</button></a>
+        
+        
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <div class="featurette">
+        <a name="dev"></a><h2 class="featurette-heading">このサイトは、どのような経緯で生まれたのですか？<span class="muted"></span></h2>
+        <p class="lead">Where Does My Money Go?</strong> はイギリスの <a href="http://www.wheredoesmymoneygo.org/">Where Does My Money Go?</a> を参考に、日本でも公共データのオープン化によって、地域社会を変え、日本社会を変え、世界にも影響を与え、貢献して行こうという思いを持って集まったメンバーによって構築、運営されています。イギリスの Where Does My Money Go? は <a href="http://okfn.org/">Open Knowledge Foundation</a> によって運営されています。<br>
+          日本では、<a href="http://okfn.jp" target="_blank">Open Knowledge Founation Japan</a>がサポートしています。
+        
+        </p>
+      </div>
+
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+                     <hr class="featurette-divider">
+<footer>
+    <div class="inner">
+      <div class="container">
+        <p>
+          Where Does My Money Go? (日本語版 ver.1.0.) は、イギリスの Open Knowledge Foundation が開発した Where Does My Money Go? (英語版) をベースに開発されています。Where Does My Money Go? プロジェクトは、公共データのオープン化を進める有志に支えられています。</p>
+
+        <ul class="footer-links span3 pull-left">
+          <li><a href="http://wheredoesmymoneygo.org">Where Does My Money Go?</a></li>
+          <li><a href="http://openspending.org">OpenSpending</a></li>
+          <li><a href="http://thedatahub.org">TheDataHub</a></li>
+          <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
+          <!--li><a href="http://yourtopia.net">YourTopia</a></li-->
+        </ul>
+        <ul class="footer-links span3 pull-left">
+          <li><a href="team.html">Core team</a></li>
+          <li><a href="sources.html">Data sources</a> used on this site</li>
+          <!--li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li-->
+          <li><a href="https://github.com/orezeni/wheredoesmymoneygo.yokohama">Code</a> and making your own</li>
+          <!--li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li-->
+        </ul>
+
+        All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>,
+        <a href="http://www.gnu.org/licenses/agpl.html">code</a>
+        and <a href="http://opendatacommons.org/licenses/odbl/">data</a> is
+        openly licensed in accordance with the
+        <a href="http://opendefinition.org/">open definition</a>.
+        <br/>
+        <a href="http://opendefinition.org"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Content" /></a><br>
+        <br>
+        <strong><a href="http://okfn.jp" target="_blank">Open Knowledge Founation Japan</a>
+      </div>
+    </div>
+  </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder/holder.js"></script>
+  </body>
+</html>
