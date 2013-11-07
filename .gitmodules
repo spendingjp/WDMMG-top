@@ -1,0 +1,3 @@
+[submodule "timeliner"]
+	path = timeliner
+	url = git://github.com/halsk/timeliner.git
