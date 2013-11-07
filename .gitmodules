@@ -1,3 +1,4 @@
 [submodule "timeliner"]
 	path = timeliner
 	url = git://github.com/halsk/timeliner.git
+	branch = toggle_timeline_window
